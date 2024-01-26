@@ -56,6 +56,8 @@ def pred_and_plot_image(
             ]
         )
 
+    transformed_image = transform(img).unsqueeze(0)
+
     ### Predict on image ###
 
     # Make sure the model is on the target device
