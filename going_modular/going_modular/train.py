@@ -12,7 +12,7 @@ from torchvision import transforms
 NUM_EPOCHS = 5
 BATCH_SIZE = 32
 HIDDEN_UNITS = 10
-LEARNING_RATE = 0.0001
+LEARNING_RATE = 0.001
 
 # Setup directories
 train_dir = "data/pizza_steak_sushi/train"
