@@ -19,7 +19,7 @@ class TinyVGG(nn.Module):
         super().__init__()
         self.conv_block_1 = nn.Sequential(
           nn.Conv2d(in_channels=input_shape, 
-                    out_channels=hiiden_units, 
+                    out_channels=hidden_units, 
                     kernel_size=3, 
                     stride=1, 
                     padding=0),  
