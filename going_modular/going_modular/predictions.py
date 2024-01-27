@@ -40,8 +40,9 @@ def pred_and_plot_image(
     # Open image
     img = Image.open(image_path)
 
-     # if img.mode != 'RGB':
-     #    img = img.convert('RGB')
+    if img.mode != 'RGB':
+        img = img.convert('RGB')
+        
     if img.mode != 'RGB':
         img = cv2.cvtColor(np.array(img), cv2.COLOR_GRAY2RGB)
         img = Image.fromarray(img)
