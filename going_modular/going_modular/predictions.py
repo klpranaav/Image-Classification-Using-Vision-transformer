@@ -6,6 +6,7 @@ Main reference for code creation: https://www.learnpytorch.io/06_pytorch_transfe
 import torch
 import torchvision
 from torchvision import transforms
+import cv2
 import matplotlib.pyplot as plt
 
 from typing import List, Tuple
