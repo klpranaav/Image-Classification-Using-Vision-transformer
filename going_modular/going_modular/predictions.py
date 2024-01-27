@@ -41,12 +41,12 @@ def pred_and_plot_image(
     img = Image.open(image_path)
 
         
-    if img.mode != 'RGB':
-        img = cv2.cvtColor(np.array(img), cv2.COLOR_GRAY2RGB)
-        img = Image.fromarray(img)
+    # if img.mode != 'RGB':
+    #     img = cv2.cvtColor(np.array(img), cv2.COLOR_GRAY2RGB)
+    #     img = Image.fromarray(img)
 
     # Create transformation for image (if one doesn't exist)
-    if transform is None:
+    if transform is not None:
         image_transform = transform
     else:
         image_transform = transforms.Compose(
