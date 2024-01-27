@@ -37,7 +37,7 @@ train_dataloader, test_dataloader, class_names = data_setup.create_dataloaders(
 
 # Create model with help from model_builder.py
 model = model_builder.TinyVGG(
-    input_shape=3,
+    input_shape=1,
     hidden_units=HIDDEN_UNITS,
     output_shape=len(class_names)
 ).to(device)
